@@ -103,3 +103,10 @@ footer h3{
     font-size: 1.2rem;
     margin: 0;
 }
+
+@media (max-width: 480px) {
+    .container {
+        margin: 0 15px;
+    }
+}
+    
