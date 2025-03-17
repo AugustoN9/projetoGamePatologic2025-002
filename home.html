@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Game PatLogic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scriptHome.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <img src="./image/logoPato.png" alt="logo">
+            <h1>Game PatLogic</h1>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="button-left">
+            <div class="etapa">
+                <img src="./image/checked.png" alt="checked" class="iconCheck">
+                <button class="box" onclick="showContent('./image/Microscopy.jpg')" >Inicio</button>
+            </div>
+            <div class="etapa">
+                <button class="box" onclick="showContent('./image/01registro.jpg')"  >Registro</button>
+            </div>
+            <div class="etapa">
+                <button class="box" onclick="showContent('./image/02macro.jpg')"  >Macro</button>
+            </div>
+            <div class="etapa">
+                <button class="box" onclick="showContent('./image/03histotecnico.jpg')"  >Processamento</button>
+            </div>       
+        </div>
+        <div class="button-right">
+            <button class="box">Emblocamento</button>
+            <button class="box">Microtomia</button>
+            <button class="box">Coloração</button>
+            <button class="box">Microscopia</button>
+        </div>
+    </div>   
+    <div id="content" class="content">
+        <form class="botoes">
+            <div class="checkbox">
+                <input type="checkbox" name="concluir" id="concluir" class="concluir" >
+                <label for="concluir">Marque se concluiu a tarefa</label>
+            </div>
+            <button type="submit" id="botaoVoltar" class="botaoVoltar">CONTINUAR</button>
+
+        </form>        
+    </div> 
+</body>
+</html>

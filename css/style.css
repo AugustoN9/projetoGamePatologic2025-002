@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Tektur:wght@400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  top: 0;
+  background-color: darkslategray;
+  border-bottom: 5px solid white;
+}
+
+.menu img{
+  width: 4%;
+}
+
+.menu h1{
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 3rem;
+  color: #fff;
+    font-weight: 700;
+    font-style: normal;
+    padding: 10px 20px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: url("../image/BackgroundLaboratoryPathol720p.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.etapa{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 200px;
+    -height: 150px;
+    padding: 0px;
+}
+
+.etapa img {
+    width: 36px;
+    margin-bottom: -20px;
+    z-index: 9;
+}
+
+.iconCheck {
+    display: none;
+}
+
+.botaoVoltar{
+    margin: 10px 40px;
+    width: 200px;
+    padding: 16px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 12px -2px 
+}
+
+.botoes {
+    width: 120%;
+    margin: -2%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    background-color: rgba(68, 75, 83, 0.5);
+}
+
+.checkbox {
+    position: relative;
+    margin: 10px;
+  }
+  
+  .checkbox input {
+    width: 20px;
+    height: 20px;
+  
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  }
+  
+  .checkbox label {
+    margin-left: 5px;
+    color: #fff;
+    font-family:'Poppins';
+    font-size: 1.1rem;
+  }
+  
+  .checkbox input + label::before {
+    content: "";
+  
+    position: absolute;
+    top: 0;
+    left: 0px;
+  
+    width: 20px;
+    height: 20px;
+  
+    border: 2px solid #fff;
+    border-radius: 5px;
+  }
+  
+  .checkbox input + label::after {
+    content: "";
+    opacity: 0;
+  
+    position: absolute;
+    top: 2px;
+    left: 7px;
+  
+    width: 6px;
+    height: 14px;
+  
+    border: 3px solid #fff;
+    border-left: 0;
+    border-top: 0;
+  
+    transform: rotate(45deg);
+  }
+  
+  .checkbox input:checked + label::after {
+    opacity: 1;
+  }
+  
+  .checkbox input:focus + label::before {
+    border: 3px solid #fff;
+  }
+
+.button-left,
+.button-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.box {
+  width: 150px;
+  height: 100px;
+  margin: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.container button:hover{
+    font-size: 1.3rem;
+}
+
+.container button:active{
+    color: rgb(59, 16, 188);
+    background-color: #aeed19;
+}
+
+.content {
+    position: absolute;
+    top: 14%;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background: none;
+    display: none;
+    justify-content:left;
+    align-items:flex-end;
+    padding: 2%;
+    font-size: 24px;
+    -color: white;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (max-width: 768px) {
+    .container{
+        background-position: center center;
+        padding-right: 100px;
+        flex-direction:column;
+    }
+
+    .button-left,
+    .button-right {
+        align-items: flex-start;
+    }
+}
+
