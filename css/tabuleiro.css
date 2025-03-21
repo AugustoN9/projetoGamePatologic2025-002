@@ -1,0 +1,179 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin: 5% 1% 0 1%;
+  background-color: #f4f4f4;
+}
+
+.game-area {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+.infoGame {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.progress-container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -position: relative;
+}
+.progress-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: conic-gradient(#4caf50 0% 0%, #ddd 0% 100%);
+}
+
+#circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 2px;
+  width: 49%;
+  margin-left: 2%;
+  -max-width: 600px;
+  aspect-ratio: 7 / 6;
+  -background-color: #ccc;
+  padding: 5px;
+  border-radius: 10px;
+}
+.cell {
+  -background-color: white;
+  border: 2px solid #333;
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cellcor {
+  background-color: blueviolet;
+}
+
+#cell-0 {
+  background-color: #bfbfbf;
+}
+#cell-6,
+#cell-12,
+#cell-13 {
+  background-color: #ffff00;
+}
+#cell-2,
+#cell-8,
+#cell-14 {
+  background-color: #4c94d8;
+}
+#cell-3,
+#cell-4,
+#cell-5 {
+  background-color: #ff5e00;
+}
+#cell-11,
+#cell-17,
+#cell-23 {
+  background-color: #8dd873;
+}
+#cell-27,
+#cell-28,
+#cell-29 {
+  background-color: #4c94d8;
+}
+#cell-24,
+#cell-25,
+#cell-26 {
+  background-color: #ff0000;
+}
+#cell-30,
+#cell-36,
+#cell-37 {
+  background-color: #60caf3;
+}
+#cell-38,
+#cell-39,
+#cell-40 {
+  background-color: #083b6b;
+}
+#cell-41 {
+  background-color: #bfbf55;
+}
+
+#cell-2 img,
+#cell-5 img,
+#cell-13 img,
+#cell-23 img,
+#cell-24 img,
+#cell-27 img,
+#cell-29 img,
+#cell-37 img,
+#cell-40 img {
+  width: 90px;
+}
+
+#cell-0 img {
+  height: 50px;
+}
+
+#cell-41 img{
+  height: 90px;
+}
+
+.info-panel {
+  width: 49vw;
+  -max-width: 600px;
+  height: 100vh;
+  background-color: #fff;
+  -border-left: 4px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  display: none;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .game-area {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+  }
+
+  .tabuleiro {
+    width: 100vw;
+  }
+  .info-panel {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Tektur:wght@400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  background-color: darkslategray;
+  border-bottom: 5px solid white;
+}
+
+.menu img {
+  width: 55px;
+}
+
+.logo img {
+  width: 55px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.score {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.estrelas img {
+  width: 24px;
+}
+
+.infoUser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  font-style: normal;
+  padding: 10px 20px;
+  margin-right: 30px;
+  color: #fff;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.menu h1 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  font-style: normal;
+  padding: 10px 20px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.etapa {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 200px;
+  -height: 150px;
+  padding: 0px;
+}
+
+.etapa img {
+  width: 36px;
+  margin-bottom: -20px;
+  z-index: 9;
+}
+
+.iconCheck {
+  display: none;
+}
+
+.botaoVoltar {
+  margin: 10px 40px;
+  width: 200px;
+  padding: 16px;
+  border-radius: 13px;
+  box-shadow: 0px 0px 12px -2px;
+}
+
+.botoes {
+  width: 120%;
+  margin: -2%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  background-color: rgba(68, 75, 83, 0.5);
+}
+
+.checkbox {
+  position: relative;
+  margin: 10px;
+}
+
+.checkbox input {
+  width: 20px;
+  height: 20px;
+
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+}
+
+.checkbox label {
+  margin-left: 5px;
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 1.1rem;
+}
+
+.checkbox input + label::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0px;
+
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.checkbox input + label::after {
+  content: "";
+  opacity: 0;
+
+  position: absolute;
+  top: 2px;
+  left: 7px;
+
+  width: 6px;
+  height: 14px;
+
+  border: 3px solid #fff;
+  border-left: 0;
+  border-top: 0;
+
+  transform: rotate(45deg);
+}
+
+.checkbox input:checked + label::after {
+  opacity: 1;
+}
+
+.checkbox input:focus + label::before {
+  border: 3px solid #fff;
+}
+
+.button-left,
+.button-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.box {
+  width: 150px;
+  height: 100px;
+  margin: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.container button:hover {
+  font-size: 1.3rem;
+}
+
+.container button:active {
+  color: rgb(59, 16, 188);
+  background-color: #aeed19;
+}
+
+
+.quiz-container {
+    margin-top: -20%;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    max-height: 400px;
+    -max-width: 500px;
+    text-align: center;
+}
+.options {
+    list-style: none;
+    padding: 0;
+}
+.options li {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.options li:hover {
+    background: #0056b3;
+}
+#result {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  
+}

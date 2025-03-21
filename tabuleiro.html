@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Pathology</title>
+    <link rel="stylesheet" href="css/quiz.css" />
+    <link rel="stylesheet" href="css/tabuleiro.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <div class="logo">
+          <img src="./image/logoPato.png" alt="logo" />
+          <h1>Game PatLogic</h1>
+        </div>
+        <div class="infoGame">
+          <div class="progress-container">
+            <div class="progress-circle" id="progress">
+              <div id="circle"></div>
+            </div>
+          </div>
+          <div class="infoUser">
+            <div class="user">
+              <img src="./image/user.png" alt="logo" />
+              <h3>Username</h3>
+            </div>
+            <div class="pontos">
+              <p>10/10</p>
+            </div>
+            <div class="score">
+              <div class="estrelas">
+                <img src="./image/estrela.png" alt="" />
+              </div>
+              <div class="estrelas">
+                <img src="./image/estrela.png" alt="" />
+              </div>
+              <div class="estrelas">
+                <img src="./image/estrela.png" alt="" />
+              </div>
+              <div class="estrelas">
+                <img src="./image/estrela.png" alt="" />
+              </div>
+              <div class="estrelas">
+                <img src="./image/estrela.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="game-area">
+        <div class="tabuleiro" id="tabuleiro-section">
+          <!-- Criando as 42 células (6x7) -->
+          <div
+            class="cell cellcor"
+            id="cell-0"
+            data-value="4"
+            onclick="showInfoPanel(0) "
+          >
+            <img src="./image/start.png" alt="" />
+          </div>
+          <div class="" id="cell-1" onclick="showInfoPanel(1)"></div>
+          <div
+            class="cell cellcor"
+            id="cell-2"
+            data-value="27"
+            onclick="showInfoPanel(2)"
+          >
+            <img src="./image/quiz4.png" alt="" />
+          </div>
+          <div
+            class="cell cellcor"
+            id="cell-3"
+            data-value="31"
+            onclick="showInfoPanel(3)"
+          ></div>
+          <div
+            class="cell cellcor"
+            id="cell-4"
+            data-value="35"
+            onclick="showInfoPanel(4)"
+          ></div>
+          <div
+            class="cell cellcor"
+            id="cell-5"
+            data-value="38"
+            onclick="showInfoPanel(5)"
+          >
+            <img src="./image/quiz4.png" alt="" />
+          </div>
+          <div
+            class="cell cellcor"
+            id="cell-6"
+            data-value="8"
+            onclick="showInfoPanel(6)"
+          ></div>
+          <div class="" id="cell-7" onclick="showInfoPanel(7)"></div>
+          <div
+            class="cell cellcor"
+            id="cell-8"
+            data-value="23"
+            onclick="showInfoPanel(8)"
+          ></div>
+          <div class="" id="cell-9" onclick="showInfoPanel(9)"></div>
+          <div class="" id="cell-10" onclick="showInfoPanel(10)"></div>
+          <div
+            class="cell cellcor"
+            id="cell-11"
+            data-value="42"
+            onclick="showInfoPanel(11)"
+          ></div>
+          <div
+            class="cell cellcor"
+            id="cell-12"
+            data-value="12"
+            onclick="showInfoPanel(12)"
+          ></div>
+          <div
+            class="cell cellcor"
+            id="cell-13"
+            data-value="15"
+            onclick="showInfoPanel(13)"
+          >
+            <img src="./image/quiz4.png" alt="" />
+          </div>
+          <div
+            class="cell cellcor"
+            id="cell-14"
+            data-value="19"
+            onclick="showInfoPanel(14)"
+          ></div>
+          <div class="" id="cell-15" onclick="showInfoPanel(15)"></div>
+          <div class="" id="cell-16" onclick="showInfoPanel(16)"></div>
+          <div
+            class="cell cellcor"
+            id="cell-17"
+            data-value="46"
+            onclick="showInfoPanel(17)"
+          ></div>
+          <div class="" id="cell-18" onclick="showInfoPanel(18)"></div>
+          <div class="" id="cell-19" onclick="showInfoPanel(19)"></div>
+          <div class="" id="cell-20" onclick="showInfoPanel(20)"></div>
+          <div class="" id="cell-21" onclick="showInfoPanel(21)"></div>
+          <div class="" id="cell-22" onclick="showInfoPanel(22)"></div>
+          <div
+            class="cell cellcor"
+            id="cell-23"
+            data-value="50"
+            onclick="showInfoPanel(23)"
+          >
+            <img src="./image/quiz4.png" alt="" />
+          </div>
+          <div
+            class="cell cellcor"
+            id="cell-24"
+            data-value="73"
+            onclick="showInfoPanel(24)"
+          >
+            <img src="./image/quiz4.png" alt="" />
+          </div>
+          <div
+            class="cell cellcor"
+            id="cell-25"
+            data-value="69"
+            onclick="showInfoPanel(25)"
+          ></div>
+          <div
+            class="cell cellcor"
+            id="cell-26"
+            data-value="65"
+            onclick="showInfoPanel(26)"
+          ></div>
+          <div
+            class="cell cellcor"
+            id="cell-27"
+            data-value="62"
+            onclick="showInfoPanel(27)"
+          >
+            <img src="./image/quiz4.png" alt="" />
+          </div>
+          <div
+            class="cell cellcor"
+            id="cell-28"
+            data-value="58"
+            onclick="showInfoPanel(28)"
+          ></div>
+          <div
+            class="cell cellcor"
+            id="cell-29"
+            data-value="54"
+            onclick="showInfoPanel(29)"
+          ></div>
+          <div
+            class="cell cellcor"
+            id="cell-30"
+            data-value="77"
+            onclick="showInfoPanel(30)"
+          ></div>
+          <div class="" id="cell-31" onclick="showInfoPanel(31)"></div>
+          <div class="" id="cell-32" onclick="showInfoPanel(32)"></div>
+          <div class="" id="cell-33" onclick="showInfoPanel(33)"></div>
+          <div class="" id="cell-34" onclick="showInfoPanel(34)"></div>
+          <div class="" id="cell-35" onclick="showInfoPanel(35)"></div>
+          <div
+            class="cell cellcor"
+            id="cell-36"
+            data-value="81"
+            onclick="showInfoPanel(36)"
+          ></div>
+          <div
+            class="cell cellcor"
+            id="cell-37"
+            data-value="85"
+            onclick="showInfoPanel(37)"
+          >
+            <img src="./image/quiz4.png" alt="" />
+          </div>
+          <div
+            class="cell cellcor"
+            id="cell-38"
+            data-value="88"
+            onclick="showInfoPanel(38)"
+          ></div>
+          <div
+            class="cell cellcor"
+            id="cell-39"
+            data-value="92"
+            onclick="showInfoPanel(39)"
+          ></div>
+          <div
+            class="cell cellcor"
+            id="cell-40"
+            data-value="96"
+            onclick="showInfoPanel(40)"
+          >
+            <img src="./image/quiz2.png" alt="" />
+          </div>
+          <div
+            class="cell cellcor"
+            id="cell-41"
+            data-value="100"
+            onclick="showInfoPanel(41)"
+          ><img src="./image/trofeu.png" alt=""></div>
+        </div>
+        <div class="info-panel" id="infoPanel">Informações</div>
+      </div>
+    </div>
+
+    <script src="js/tabuleiro.js"></script>
+  </body>
+</html>

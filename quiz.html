@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Pathology</title>
+    <link rel="stylesheet" href="css/quiz.css" />
+  </head>
+  <body>
+    <nav class="menu">
+      <div class="logo">
+        <img src="./image/logoPato.png" alt="logo" />
+        <h1>Game PatLogic</h1>
+      </div>
+      <div class="infoUser">
+        <div class="user">
+          <img src="./image/user.png" alt="logo" />
+          <h3>Username</h3>
+        </div>
+        <div class="pontos">
+          <p>10/10</p>
+        </div>
+        <div class="score">
+          <div class="estrelas">
+            <img src="./image/estrela.png" alt="" />
+          </div>
+          <div class="estrelas">
+            <img src="./image/estrela.png" alt="" />
+          </div>
+          <div class="estrelas">
+            <img src="./image/estrela.png" alt="" />
+          </div>
+          <div class="estrelas">
+            <img src="./image/estrela.png" alt="" />
+          </div>
+          <div class="estrelas">
+            <img src="./image/estrela.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      
+      <div class="quiz-container">
+        <h1>Quiz</h1>
+        <h2>Biópsia</h2>
+        <p class="question">
+          De acordo com a definição do livro
+          <em>Robbins & Cotran - Bases Patológicas das Doenças</em>, o termo
+          "biópsia" refere-se a:
+        </p>
+        <ul class="options">
+          <li onclick="checkAnswer(this, false)">
+            A) O exame post-mortem realizado para determinar a causa da morte.
+          </li>
+          <li onclick="checkAnswer(this, false)">
+            B) A cultura de células em laboratório para desenvolvimento de
+            tecidos artificiais.
+          </li>
+          <li onclick="checkAnswer(this, false)">
+            C) A análise de fluidos corporais para identificar doenças
+            sistêmicas.
+          </li>
+          <li onclick="checkAnswer(this, false)">
+            D) O uso de marcadores moleculares para detectar mutações genéticas.
+          </li>
+          <li onclick="checkAnswer(this, true)">
+            E) A remoção e análise de um fragmento de tecido vivo para
+            diagnóstico.
+          </li>
+        </ul>
+
+        <p id="result"></p>
+        <h2>Fixadores</h2>
+        <p class="question">
+          A formalina tamponada a 10% é um dos fixadores mais utilizados em
+          patologia. Qual é a sua principal função?
+        </p>
+        <ul class="options">
+          <li onclick="checkAnswer(this, false)">
+            A) Dissolver as células para facilitar a coloração histológica.
+          </li>
+          <li onclick="checkAnswer(this, true)">
+            B) Evitar a retração dos tecidos e preservar a morfologia celular.
+          </li>
+          <li onclick="checkAnswer(this, false)">
+            C) Desidratar os tecidos antes da inclusão em parafina.
+          </li>
+          <li onclick="checkAnswer(this, false)">
+            D) Substituir o álcool na fixação histológica.
+          </li>
+          <li onclick="checkAnswer(this, false)">
+            E) Impedir a proliferação bacteriana sem alterar a estrutura
+            tecidual.
+          </li>
+        </ul>
+
+        <p id="result"></p>
+      </div>
+      
+    </div>
+
+    <script src="js/quiz.js"></script>
+  </body>
+</html>
